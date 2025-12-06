@@ -1,27 +1,19 @@
-<?php
-
-$tasks = $this->getTasks();
-
-?>
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Лист Задач</title>
+    <title>Лист задач</title>
 </head>
-
 <body>
-    <h1> Список задач</h1>
+    <h1>Список задач</h1>
+    <a href="?route=task/add">Добавить задачу</a>
     <ul>
         <?php foreach ($tasks as $task): ?>
-            <li><?= htmlspecialchars($task->getTitle())?></li>
-            <?= $task->isCompleted() ? "✔" : "❌"?>
-        </li>
+            <li>
+                <?= htmlspecialchars($task->getTitle()) ?>
+                <?= $task->isCompleted() ? "✔" : "❌" ?>
+            </li>
         <?php endforeach; ?>
-        <a href="?route=task/add"></a>
     </ul>
 </body>
-
 </html>

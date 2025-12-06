@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Выполнить работу (файл)",
+        "completed": false
+    },
+    {
+        "title": "Загрузить работу (файл)",
+        "completed": false
+    },
+    {
+        "title": "Проверка работы (файл)",
+        "completed": false
+    }
+]
